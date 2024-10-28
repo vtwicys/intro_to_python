@@ -20,7 +20,7 @@ def parse_logs(filename):
             message = line_split[2]
             user = line_split[-1]
 
-            # We want only FATAL Errors
+            # Print a message for only FATAL Errors
             if message == "FATAL":
                 print(f"{user} => Error {message} on {date} at {time}")
 
