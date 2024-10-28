@@ -1,4 +1,17 @@
 def parse_logs(filename):
+    """
+    Parses a log file to identify and print FATAL error messages.
+
+    Args:
+        filename (str): The path to the log file to be parsed.
+
+    Returns:
+        None
+    
+    Side effect: 
+        Prints out FATAL logs with the user, the error message, date, and time of occurrence.
+
+    """
     with open(filename, "r") as logs:
         for line in logs:
             line_split = line.split()
