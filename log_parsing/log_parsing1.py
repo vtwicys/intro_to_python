@@ -16,13 +16,13 @@ logs = [
     "2021-03-31 9:20:21 INFO DeleteProduct:57 - Updated successfully record number 5 : iipeter"
 ]
 
-# Accessing each item in the lis using a for loop
+# Accessing each item in the log list using a for loop
 for line in logs:
     line_split = line.split() # Split the string and convert to a list
-    date = line_split[0] # The first element in the list is the data
-    time = line_split[1] # The second element in the list is the time
-    message = line_split[2] # The third element in the list is the error message
-    user = line_split[-1] # The last element in the list is the user name
+    date = line_split[0] # The first element in the split list is the data
+    time = line_split[1] # The second element in the split list is the time
+    message = line_split[2] # The third element in the split list is the error message
+    user = line_split[-1] # The last element in the split list is the user name
 
     # Print a message for only FATAL Errors
     if message == "FATAL":
